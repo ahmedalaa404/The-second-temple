@@ -1,0 +1,94 @@
+html
+{
+    scroll-behavior: smooth;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul
+{
+    list-style: none;
+}
+body
+{
+    font-size: 1.1rem;
+    background-color: black;
+}
+.container
+{
+    padding-left:15px ;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* start header */
+
+header
+{
+background-image: url();
+}
+header .container
+{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 108px;
+}
+header .container::after
+{
+    content: "";
+    position: absolute;
+    width:calc(100% - 30px) !important;
+    height: 1px;
+    background-color: #a2a2a2a2;
+    bottom: 0;
+    left: 15px;
+}
+
+header .container .logo img
+{
+    height: 40px;
+}
+header nav
+{
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+header nav ul
+{
+    display: flex;
+}
+
+header nav ul li a
+{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding:43px 10px;
+}
+header nav ul li .active,
+header nav ul li a:hover
+{
+    color: #19c8fa;
+    border-bottom:1px solid #19c8fa ;
+}
+header .form
+{
+    height: 30px;
+    position: relative;
+    margin-left: 30px;
+    border-left: 1px solid white;
+}
+header .form i
+{
+    color:white;
+    padding-left:30px
+}
+/* end header */
