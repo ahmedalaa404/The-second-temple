@@ -12,7 +12,8 @@ html
 
 :root
 {
-    --transparen-color:rgb(15 116 143 /70%)
+    --transparen-color:rgb(15 116 143 /70%);
+    --main-color:#19c8fa;
 }
 
 ul
@@ -37,6 +38,7 @@ header
     position: absolute;
     left: 0;
     right: 0;
+    z-index: 2; 
 }
 
 header .container
@@ -87,7 +89,7 @@ header nav ul li .active,
 header nav ul li a:hover
 {
     color: #19c8fa;
-    border-bottom:4px solid #19c8fa ;
+    border-bottom:4px solid var(--main-color) ;
 }
 header .form
 {
@@ -231,7 +233,13 @@ header nav ul li a:hover,header nav ul li .active
     border: 1px solid white;
     background-color: transparent   ;
 }
-.switches div .circle:hover
+.switches div :nth-child(2)
+{
+    background-color: var(--main-color);
+    border: none;
+
+}
+.switches div .circle:nth-child(1):hover ,.switches div .circle:nth-child(3):hover
 {
     border: none;
     background-color: white   ;
@@ -241,7 +249,6 @@ header nav ul li a:hover,header nav ul li .active
 {
     .text
     {
-        background-color: red;
         width: 100%;
         padding: 12px;
     }
