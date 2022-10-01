@@ -4,7 +4,7 @@ html
 }
 *
 {
-    margin: 0;
+    margin: 0 ;
     padding: 0;
     box-sizing: border-box;
 }
@@ -162,6 +162,7 @@ header nav ul li a:hover,header nav ul li .active
 }
 }
 
+
 /* start landing  */
 .landing
 {
@@ -176,7 +177,7 @@ header nav ul li a:hover,header nav ul li .active
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.661);
-
+    position: relative;
 }
 .text
 {
@@ -195,6 +196,60 @@ header nav ul li a:hover,header nav ul li .active
 {
     width: 70%;
     line-height: 2;
+}
+.overlay
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.overlay i 
+{
+    color: white; 
+    padding: 20px;
+    font-size: 2.6rem;
+}
+.switches
+{
+    width: 100%;    
+    position: absolute;
+    bottom: 0;
+    color:white
+
+}
+.switches div
+{
+    justify-content: center;
+    display: flex;
+}
+.switches div .circle 
+{
+    width: 30px;
+    height: 30px;
+    margin:20px ;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: transparent   ;
+}
+.switches div .circle:hover
+{
+    border: none;
+    background-color: white   ;
+}
+
+@media screen and (max-width:768px) 
+{
+    .text
+    {
+        background-color: red;
+        width: 100%;
+        padding: 12px;
+    }
+    .text .content
+    {
+        line-height: 1.2; 
+        width: 100%;
+    }
 }
 
 /* end landing  */
