@@ -417,7 +417,7 @@ header nav ul li a:hover,header nav ul li .active
 }
 .design .phone img
 {
-transform: translateY(60%);
+transform: translateY(30%);
 
 }
 .design .design-text
@@ -443,5 +443,14 @@ transform: translateY(60%);
     padding: 20px 30px 20px 0;
 }
 
+
+@media screen and (max-width:768px)
+{
+    .design .phone
+    {
+        display: none;
+
+    }
+}
 
 /* end design  */
