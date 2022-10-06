@@ -608,6 +608,10 @@ transform:  rotate(3deg) scale(1.1);
 
 /* end  videos  */
 
+.ABOUT-US
+{
+    overflow: hidden;
+}
 .image-about
 {
     text-align: center;
@@ -634,6 +638,7 @@ transform:  rotate(3deg) scale(1.1);
     background-size: cover;
     background-repeat: no-repeat;
 
+
 }
 .layer-rate
 {
@@ -650,4 +655,41 @@ transform:  rotate(3deg) scale(1.1);
     padding: 50px;
     color: white;
     text-align: center;
+    flex-wrap: wrap;
+}
+.rate-state i
+{
+background-color: black;
+font-size: 140%;
+padding: 10px;
+margin: 30px 0;
+border-radius: 50%;
+}
+.rate-state h4
+{
+    font-size: 260%;
+    padding: 30px 0 ;
+}
+.rate-state p 
+{
+    font-size: 14px;
+} 
+@media screen and (max-width:991px)
+{
+    .rate-state
+    {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:767px)
+{
+    .rate-state
+    {
+        width: 100%;
+    }
+    .stats
+    {
+        flex-direction: column;
+    }
 }
