@@ -483,14 +483,39 @@ padding: 15px;
 {
     width: 25%;
     position: relative;
+    overflow: hidden;
 }
 
 .gallery .photo-gallery img
 {
     width: 100%;
-    transition: 1s;
+    transition: 0.8s transform;
 }
-.gallery .photo-gallery img:hover
+.gallery .photo-gallery:hover img
 {
-transform: rotate(10deg);
+transform:  rotate(3deg) scale(1.1);
+}
+.gallery .photo-gallery:hover .cover-text
+{
+    bottom: 0px;
+}
+.cover-text
+{
+    position: absolute;
+    padding:3px 26px;
+    bottom: -100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    transition: 0.2s bottom;
+}
+.cover-text h6
+{
+    padding-top:3px;
+    color: #777;
+}
+.cover-text p
+{
+    color:var(--main-color) ;
+    padding: 5px 0;
+    font-size: 14px;
 }
