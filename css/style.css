@@ -87,6 +87,29 @@ body
     margin-right: auto;
     margin-left: auto;
 }
+@media (min-width: 1200px)
+{.container {
+    width: 1170px;
+}}
+@media (min-width: 992px)
+{.container {
+    width: 970px;
+}}
+@media (min-width: 768px)
+{.container {
+    width: 750px;
+}}
+
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
 
 
 
@@ -692,4 +715,70 @@ border-radius: 50%;
     {
         flex-direction: column;
     }
+}
+
+/* end of rate  */
+
+/* start prograss */
+.prograss
+{
+    padding: 50px 0;
+}
+.prograss .container
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+
+.text-heading
+{
+    text-align: center;
+    font-weight: 100;
+    line-height: 2;
+    padding: 20px 0;
+}
+.text-heading h3
+{
+    padding: 20px 0;
+}
+.text-heading p
+{
+    color: #777;
+    font-size: 90%;
+}
+
+.prograss .text-left , .prograss .text-right
+
+{
+    width:100%;
+}
+
+.feedback 
+{
+    display: flex;
+    padding: 40px 0;
+
+}
+
+
+.feedback .image img
+{
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+.feedback .text-feedback
+{
+line-height: 2;
+padding: 10px;
+border-bottom: 1px solid rgba(119, 119, 119, 0.436)
+}
+
+.feedback .text-feedback p:last-of-type
+{
+    text-align: end;
+    padding-top: 20px;
+    color:#777;
 }
