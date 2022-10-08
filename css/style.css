@@ -728,7 +728,7 @@ border-radius: 50%;
 {
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 100px;
 }
 
 
@@ -755,6 +755,7 @@ border-radius: 50%;
     width:100%;
 }
 
+/* start feednack of section left */
 .feedback 
 {
     display: flex;
@@ -781,4 +782,116 @@ border-bottom: 1px solid rgba(119, 119, 119, 0.436)
     text-align: end;
     padding-top: 20px;
     color:#777;
+}
+.choose
+{
+    padding:20px 0 0 0 ;
+    display: flex;
+    justify-content: center;
+}
+.choose div
+{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #777;
+    margin-left: 10px;
+}
+.choose div:nth-child(2)
+{
+    border: none;
+    background-color: #19c8fa;
+}
+.choose div:hover:not(:nth-child(2))
+{
+    background-color: #006d8b33;
+    border: none;
+}
+
+@media screen and (max-width:991px)
+{
+    .prograss .container
+    {
+    flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width:767px)
+{
+    .feedback 
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } 
+}
+/* end feednack of section left */
+
+
+
+.name-skilles
+{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    color: #777;
+    width: 90%;
+
+}
+
+.name-skilles p:last-child
+{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+    transform: translateX(50%);
+}
+.name-skilles p:last-child::after
+{
+    content: "";
+    position: absolute;
+    border-top:10px solid rgb(0, 0, 0) ;
+    border-left:10px solid transparent ;
+    border-right:10px solid transparent ;
+    border-bottom:10px solid transparent ;
+    top: 100%;
+    right: 50%;
+    transform: translateX(50%);
+}
+.w-85 ,.line-skilles:nth-child(4)::before
+{
+    width: 85%;
+}
+
+
+.w-80 ,.line-skilles:nth-child(6)::before
+{
+    width: 80%;
+}
+
+
+.w-90 ,.line-skilles:nth-child(8)::before
+{
+    width: 90%;
+}
+
+
+.line-skilles
+{
+    width: 100%;
+    height:30px ;
+    background-color: #dedadc;
+    position: relative;
+}
+
+.line-skilles::before
+{
+    content: "";
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    background-color: #19c8fa;
 }
