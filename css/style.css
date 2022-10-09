@@ -902,7 +902,7 @@ border-bottom: 1px solid rgba(119, 119, 119, 0.436)
  .quotes
  {
     margin: 50px 0;
-    background-image: url("/images/quote.jpg");
+    background-image: url("../images/quote.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -934,19 +934,80 @@ background-color: rgb(0 0 0 / 75%);;
  /* end of quote  */
 
 /* start of priceing */
+
+
+
+
+
 .pricing
 {
     padding: 50px 0;
 }
 
+@media (min-width: 768px)
+{
+.plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-column-gap: 40px;
+    grid-row-gap: 60px;
+}}
 
 
+.plan-price
+{
+    text-align: center;
+    background-color: #fcfcfc;
+}
+.dt-price
+{
+    border-top:1px solid #19c8fa ;
+    border-bottom:1px solid #19c8fa ;
+    padding: 30px 0;
+}
+.dt-price p
+{
+    margin: 20px 0;
+    font-weight: bolder;
+}
+.price-producr
+{
+    margin: 0 4px;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.features
+{
+    list-style-type: none;
+}
+.features li
+{
+    position: relative;
+    padding:20px 0;
+}
 
+.features li:not(:last-child)::before
+{
 
+    content: "";
+    position: absolute;
+    height: 1px;
+    bottom: 0;
+    width: 80%;
+    background-color: #19c8fa;
+    left: 10%;
+}
 
-
-
-
-
- 
+.buy
+{
+    padding: 30px 0;
+    border-top:1px solid #19c8fa ;
+}
+.buy button
+{
+    padding: 20px;
+    color: #594af0 ;
+    border: 1px solid #19c8fa ;
+    cursor: pointer;
+}
 /* end of priceing */
