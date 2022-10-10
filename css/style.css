@@ -2,6 +2,50 @@ html
 {
     scroll-behavior: smooth;
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+    html
+    {
+        font-size: 10px;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+    html
+    {
+        font-size: 12px;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+    html
+    {
+        font-size: 13px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{   
+     html
+    {
+        font-size: 14px;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)
+{
+    html
+    {
+        font-size: 16px;
+    }
+}
+
+
+
 *
 {
     margin: 0 ;
@@ -69,10 +113,7 @@ ul
 {
     list-style: none;
 }
-body
-{
-    font-size: 1.1rem;
-}
+
 .container
 {
     padding-left:15px ;
@@ -113,7 +154,6 @@ body
     .container {
       width: 970px;
       overflow: hidden;
-
     }
   }
   /* Large */
@@ -121,7 +161,6 @@ body
     .container {
       width: 1170px;
       overflow: hidden;
-
     }
   }
 
@@ -258,9 +297,6 @@ header nav ul li a:hover,header nav ul li .active
     padding-bottom:5px ;
 }
 }
-
-
-
 /* end header */
 
 
